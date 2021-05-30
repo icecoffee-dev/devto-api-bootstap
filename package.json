@@ -1,0 +1,40 @@
+{
+  "name": "devto-api-bootstap",
+  "version": "1.0.0",
+  "description": "a bootstrapped view of dev.to api",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.{js, jsx}\"",
+    "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
+    "dev": "parcel src/index.html"
+  },
+  "author": "ATULIT ANAND <atulitraj.anand@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "dev.to",
+    "api",
+    "project"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-react": "^7.13.13",
+    "eslint": "^7.18.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "parcel": "^2.0.0-beta.2",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "browserslist": [
+    "last 2 Chrome versions"
+  ]
+}
