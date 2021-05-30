@@ -4,6 +4,7 @@
   "description": "a bootstrapped view of dev.to api",
   "main": "index.js",
   "scripts": {
+    "start": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js, jsx}\"",
     "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
     "dev": "parcel src/index.html"
