@@ -69,7 +69,9 @@ function Card({ user }) {
           </div>
           <h2 className="title">{user.title}</h2>
         </div>
-        <div className="content">{user.description}</div>
+        <a href={user.url}>
+          <div className="content">{user.description}</div>
+        </a>
         <footer id="card-footer">
           <div id="tags">
             {user.tag_list.map((tagName) => (

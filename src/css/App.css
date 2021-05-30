@@ -86,3 +86,7 @@ main {
 .timestamp {
   flex: 1 1 30%;
 }
+
+a {
+  text-decoration: none;
+}
