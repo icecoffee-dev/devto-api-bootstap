@@ -7,9 +7,3 @@ coverage/
 .vscode
 node_modules
 *.code-workspace
-
-*.html/
-*.css/
-*.js/
-*.css.map/
-*.js.map/
