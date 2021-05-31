@@ -8,8 +8,8 @@ coverage/
 node_modules
 *.code-workspace
 
-*.html
-*.css
-*.js
-*.css.map
-*.js.map
+*.html/
+*.css/
+*.js/
+*.css.map/
+*.js.map/
