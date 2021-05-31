@@ -25,7 +25,7 @@ git push -u origin main
 
 - add search box
 
-#### Message from inital commit in searchbox branch
+#### Message from inital commit in searchbox branch --only for searchbox
 
 ```code
 warning: LF will be replaced by CRLF in .prettierrc.
