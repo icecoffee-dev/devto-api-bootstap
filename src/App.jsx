@@ -1,9 +1,12 @@
 import CardList from "./CardList";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import Header from "./Header";
+import { UserProvider } from "./UserContext";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [postList, setPostList] = useState([]);
+  const user = useContext(UserProvider);
 
   useEffect(() => {
     (async function requestPostList() {
@@ -14,16 +17,23 @@ function App() {
       setLoading(false);
     })();
   }, []);
-
-  if (loading) {
-    return <div>Loading! Please Wait</div>;
-  } else {
-    return (
-      /* jshint ignore:start */
-      <CardList props={postList} />
-      /* jshint ignore:end */
-    );
+  {
+    console.log(user);
   }
+  return (
+    /* jshint ignore:start */
+    <>
+      <Header />
+      {loading ? (
+        <div>Loading! Please Wait</div>
+      ) : (
+        <UserProvider>
+          <CardList props={postList} />
+        </UserProvider>
+      )}
+    </>
+    /* jshint ignore:end */
+  );
 }
 
 export default App;

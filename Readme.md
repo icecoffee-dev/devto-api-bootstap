@@ -27,6 +27,8 @@ git push -u origin main
 
 #### Message from inital commit in searchbox branch --only for searchbox
 
+# Read this and apply [Context API](https://medium.com/@danfyfe/using-react-context-with-functional-components-153cbd9ba214)
+
 ```code
 warning: LF will be replaced by CRLF in .prettierrc.
 The file will have its original line endings in your working directory
