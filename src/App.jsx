@@ -1,11 +1,14 @@
 import CardList from "./CardList";
 import { useContext, useEffect, useState } from "react";
 import Form from "./Form";
+import NotFound from "./NotFound";
+import Loading from "./Loading";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [postList, setPostList] = useState([]);
   const [user, setUser] = useState("icecoffee");
+
   function onSubmitHandler(user) {
     // excepts name of user to search for
     // to be user in form component
@@ -21,7 +24,6 @@ function App() {
       setLoading(false);
     })(user);
   }, [user]);
-
   return (
     /* jshint ignore:start */
     <>
@@ -30,7 +32,9 @@ function App() {
       </header>
       <main>
         {loading ? (
-          <div>Loading! Please Wait</div>
+          <Loading />
+        ) : postList.length === 0 ? (
+          <NotFound />
         ) : (
           <CardList props={postList} />
         )}

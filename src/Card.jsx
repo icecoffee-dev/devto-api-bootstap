@@ -60,13 +60,15 @@ function Card({ user }) {
       </header>
       <main>
         <div className="details">
-          <div className="profile">
-            <img
-              src={user.user.profile_image}
-              alt={user.user.username}
-              className="profile-img"
-            />
-          </div>
+          <a href={user.url.slice(0, user.url.indexOf(user.slug))}>
+            <div className="profile">
+              <img
+                src={user.user.profile_image}
+                alt={user.user.username}
+                className="profile-img"
+              />
+            </div>
+          </a>
           <h2 className="title">{user.title}</h2>
         </div>
         <a href={user.url}>
