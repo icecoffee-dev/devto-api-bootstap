@@ -17,7 +17,7 @@ main {
 }
 
 #main-header {
-  background-color: rgba(255, 221, 221, 0.891);
+  background-color: #fff;
   box-shadow: 0rem 1rem 1rem rgba(193, 193, 193, 0.891);
   padding: 2rem 1rem;
   display: flex;
@@ -45,6 +45,18 @@ main {
 #main-header button {
   background-color: #adefd1ff;
 }
+
+@media (max-width: 500px) {
+  #main-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #main-header button,
+  #main-header input {
+    padding: 0.5rem 1rem;
+  }
+}
+
 .post-card {
   margin-top: 5rem;
   margin-left: 2rem;
