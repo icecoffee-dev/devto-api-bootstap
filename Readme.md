@@ -2,7 +2,7 @@
 
 [Git guide](https://github.com/git-guides/git-push)
 
-## Git [Repository](https://github.com/icecoffee-dev/devto-api-bootstap/tree/main)
+## Git [Repository](https://github.com/icecoffee-dev/devto-api-bootstap/tree/)
 
 ### Build your own dreams, or someone else will hire you to build theirs.
 
@@ -23,17 +23,12 @@ git push -u origin main
 
 #### Target
 
-- add search box
+- add search box :done:
 
-#### Message from inital commit in searchbox branch --only for searchbox
+Complted application of search box but without portal and context api
 
-# Read this and apply [Context API](https://medium.com/@danfyfe/using-react-context-with-functional-components-153cbd9ba214)
+---
 
-```code
-warning: LF will be replaced by CRLF in .prettierrc.
-The file will have its original line endings in your working directory
-warning: LF will be replaced by CRLF in src/App.jsx.
-The file will have its original line endings in your working directory
-warning: LF will be replaced by CRLF in swagger.json.
-The file will have its original line endings in your working directory
-```
+# status - done
+
+## `> checkout searchbox branch after this`
