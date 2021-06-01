@@ -2,12 +2,13 @@
   "name": "devto-api-bootstap",
   "version": "1.0.0",
   "description": "a bootstrapped view of dev.to api",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "parcel src/index.html",
     "format": "prettier --write \"src/**/*.{js, jsx}\"",
     "lint": "eslint \"src/**/*.{js, jsx}\" --quiet",
-    "dev": "parcel src/index.html"
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "author": "ATULIT ANAND <atulitraj.anand@gmail.com>",
   "license": "MIT",
