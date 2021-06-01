@@ -75,10 +75,9 @@ function Card({ user }) {
         <footer id="card-footer">
           <div id="tags">
             {user.tag_list.map((tagName) => (
-              <span
-                key={tagName}
-                style={colorifyTag(tagName)}
-              >{`#${tagName}`}</span>
+              <span key={tagName} style={colorifyTag(tagName)}>
+                {`#${tagName}`}
+              </span>
             ))}
           </div>
           <div className="timestamp">

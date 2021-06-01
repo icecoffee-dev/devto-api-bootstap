@@ -1,5 +1,4 @@
-import react from "react";
-import { createContext } from "react";
+import react, { createContext } from "react";
 
 const UserContext = createContext("icecoffee");
 
